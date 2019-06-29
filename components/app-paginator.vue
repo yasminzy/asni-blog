@@ -2,7 +2,7 @@
   <nav
     v-if="current <= last"
     aria-label="pagination"
-    class="pagination"
+    class="pagination is-rounded"
     role="navigation"
   >
     <nuxt-link
