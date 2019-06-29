@@ -1,6 +1,6 @@
 <template>
   <div v-if="ready" class="container">
-    <div class="section columns is-desktop">
+    <div class="section columns is-desktop" data-aos="fade-down-left">
       <div class="card column">
         <header class="card-header">
           <p class="card-header-title">

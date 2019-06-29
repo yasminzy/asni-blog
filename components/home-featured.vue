@@ -1,12 +1,15 @@
 <template>
-  <div v-if="ready" class="section">
+  <div v-if="ready" class="section" data-aos="fade">
     <h2 class="has-text-weight-bold mb-2">Featured</h2>
 
     <div class="tile is-ancestor">
       <div class="tile is-vertical is-8">
         <div class="tile">
           <div class="tile is-parent is-vertical">
-            <article class="tile is-child notification is-danger">
+            <article
+              class="tile is-child notification is-danger"
+              data-aos="fade-left"
+            >
               <nuxt-link :to="'/article/' + posts[0].url" class="is-block">
                 <p class="title">{{ posts[0].title }}</p>
 
@@ -14,7 +17,10 @@
               </nuxt-link>
             </article>
 
-            <article class="tile is-child notification is-warning">
+            <article
+              class="tile is-child notification is-warning"
+              data-aos="fade-right"
+            >
               <nuxt-link :to="'/article/' + posts[1].url" class="is-block">
                 <p class="title">{{ posts[1].title }}</p>
 
@@ -24,7 +30,10 @@
           </div>
 
           <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
+            <article
+              class="tile is-child notification is-success"
+              data-aos="fade-up-right"
+            >
               <nuxt-link :to="'/article/' + posts[2].url" class="is-block">
                 <p class="title">{{ posts[2].title }}</p>
 
@@ -42,7 +51,10 @@
         </div>
 
         <div class="tile is-parent">
-          <article class="tile is-child notification is-link">
+          <article
+            class="tile is-child notification is-link"
+            data-aos="fade-up-left"
+          >
             <nuxt-link :to="'/article/' + posts[3].url" class="is-block">
               <p class="title">{{ posts[3].title }}</p>
 
@@ -57,7 +69,10 @@
       </div>
 
       <div class="tile is-parent">
-        <article class="tile is-child notification is-info">
+        <article
+          class="tile is-child notification is-info"
+          data-aos="fade-down-right"
+        >
           <nuxt-link :to="'/article/' + posts[4].url" class="is-block">
             <div class="content">
               <p class="title">{{ posts[4].title }}</p>

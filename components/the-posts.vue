@@ -1,5 +1,5 @@
 <template>
-  <div v-if="ready" class="page section">
+  <div v-if="ready" class="page section" data-aos="fade">
     <h2 v-if="home" class="has-text-weight-bold mb-2">Latest</h2>
 
     <h1 v-else-if="type === 'latest'" class="has-text-weight-bold is-size-1">
@@ -15,7 +15,12 @@
     </p>
 
     <ul class="ml-0">
-      <li v-for="(item, index) in posts" :key="index" class="card is-flex">
+      <li
+        v-for="(item, index) in posts"
+        :key="index"
+        class="card is-flex"
+        data-aos="fade-down"
+      >
         <header class="card-header">
           <p class="card-header-title mb-0">
             {{ item.time | moment("calendar") }}

@@ -1,5 +1,5 @@
 <template>
-  <header v-if="ready" class="section">
+  <header v-if="ready" class="section" data-aos="fade-up">
     <div class="box">
       <nuxt-link :to="'/article/' + post.url" class="media">
         <div class="media-left">

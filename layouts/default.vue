@@ -1,5 +1,5 @@
 <template>
-  <div class="has-background-light is-flex mh-100">
+  <div class="has-background-light is-flex mh-100" data-aos="fade">
     <div class="mh-nav">
       <AppNav />
     </div>

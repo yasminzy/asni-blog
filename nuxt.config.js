@@ -20,7 +20,8 @@ export default {
     "~/plugins/vue-lazyload",
     "~/plugins/vue-moment",
     "~/plugins/vue-social-sharing",
-    "~/plugins/vuex-router-sync"
+    "~/plugins/vuex-router-sync",
+    { src: "~/plugins/aos", ssr: false }
   ],
   modules: ["@nuxtjs/bulma", "@nuxtjs/dotenv", "@nuxtjs/eslint-module"],
   build: {
