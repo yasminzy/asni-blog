@@ -14,16 +14,19 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   loading: { color: "#Hex	00C7A9" },
-  css: ["typicons.font/src/font/typicons.css"],
+  css: [
+    "typicons.font/src/font/typicons.css",
+    { src: "@/assets/custom-bulma.sass", lang: "sass" }
+  ],
   plugins: [
-    "~/plugins/vue-disqus",
-    "~/plugins/vue-lazyload",
-    "~/plugins/vue-moment",
-    "~/plugins/vue-social-sharing",
-    "~/plugins/vuex-router-sync",
+    "@/plugins/vue-disqus",
+    "@/plugins/vue-lazyload",
+    "@/plugins/vue-moment",
+    "@/plugins/vue-social-sharing",
+    "@/plugins/vuex-router-sync",
     { src: "~/plugins/aos", ssr: false }
   ],
-  modules: ["@nuxtjs/bulma", "@nuxtjs/dotenv", "@nuxtjs/eslint-module"],
+  modules: ["@nuxtjs/dotenv", "@nuxtjs/eslint-module"],
   build: {
     postcss: {
       preset: {
