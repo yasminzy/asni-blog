@@ -118,6 +118,7 @@ export default {
 <style lang="scss" scoped>
 .card:last-of-type {
   margin-top: 3rem;
+  align-self: flex-start;
 
   @media (min-width: 1200px) {
     margin-left: 3rem;
