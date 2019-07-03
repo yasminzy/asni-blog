@@ -16,8 +16,8 @@
 
 <script>
 import { closeMenu } from "../assets/functions";
-import AppFooter from "~/components/app-footer";
-import AppNav from "~/components/app-nav";
+import AppFooter from "@/components/app-footer";
+import AppNav from "@/components/app-nav";
 
 export default {
   components: {
@@ -50,6 +50,10 @@ $positions: ("top", "left", "bottom", "right");
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .is-flex.mh-100 {
   flex-direction: column;
 }
@@ -72,13 +76,5 @@ $positions: ("top", "left", "bottom", "right");
 
 .page {
   min-height: calc(100vh - 60px);
-}
-
-.fb {
-  background-color: #3b5998;
-}
-
-.twitter {
-  background-color: #1da1f2;
 }
 </style>

@@ -24,7 +24,7 @@ export default {
     "@/plugins/vue-moment",
     "@/plugins/vue-social-sharing",
     "@/plugins/vuex-router-sync",
-    { src: "~/plugins/aos", ssr: false }
+    { src: "@/plugins/aos", ssr: false }
   ],
   modules: ["@nuxtjs/dotenv", "@nuxtjs/eslint-module"],
   build: {
