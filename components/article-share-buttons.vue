@@ -43,3 +43,13 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.fb {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+</style>
