@@ -2,7 +2,7 @@
   <nav
     v-if="current <= last"
     aria-label="pagination"
-    class="pagination is-rounded"
+    class="pagination is-rounded mt-2"
     role="navigation"
   >
     <nuxt-link
@@ -106,5 +106,11 @@ export default {
 <style lang="scss" scoped>
 ul {
   list-style-type: none;
+}
+
+.pagination-list {
+  @media (max-width: 576px) {
+    display: none;
+  }
 }
 </style>

@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { closeMenu, urlize } from "~/assets/functions";
+import { closeMenu, urlize } from "@/assets/functions";
 
 export default {
   computed: {

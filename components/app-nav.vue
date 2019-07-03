@@ -50,11 +50,7 @@ header {
 }
 
 .z {
-  z-index: -1;
-
-  @media (min-width: 576px) {
-    z-index: 0;
-  }
+  z-index: 0;
 }
 
 .is-flex {

@@ -3,7 +3,7 @@
     <div class="box">
       <nuxt-link :to="'/article/' + post.url" class="media">
         <div class="media-left">
-          <figure class="image is-128x128">
+          <figure class="image">
             <img v-lazy="post.img" :alt="post.title" />
           </figure>
         </div>
@@ -48,3 +48,22 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.media {
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .media-left {
+      margin: 0 auto 1rem;
+    }
+  }
+}
+
+.image {
+  @media (min-width: 768px) {
+    height: 128px;
+    width: 128px;
+  }
+}
+</style>

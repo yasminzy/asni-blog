@@ -22,7 +22,7 @@
         <div class="card-content">
           <div class="media">
             <div class="media-left">
-              <figure class="image is-128x128">
+              <figure class="image">
                 <img v-lazy="post.img" :alt="post.alt || post.title" />
               </figure>
             </div>
@@ -123,6 +123,23 @@ export default {
   @media (min-width: 1200px) {
     margin-left: 3rem;
     margin-top: 0;
+  }
+}
+
+.media {
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .media-left {
+      margin: 0 auto 1rem;
+    }
+  }
+}
+
+.image {
+  @media (min-width: 768px) {
+    height: 128px;
+    width: 128px;
   }
 }
 </style>
