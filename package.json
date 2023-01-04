@@ -17,7 +17,7 @@
     "aos": "next",
     "bulma": "^0.7.5",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.8.1",
+    "nuxt": "^2.15.8",
     "prismic-dom": "^2.1.0",
     "prismic-javascript": "^2.0.3",
     "typicons.font": "^2.0.9",
